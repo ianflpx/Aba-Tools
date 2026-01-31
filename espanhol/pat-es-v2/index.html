@@ -576,71 +576,7 @@
         <!-- Set Attr em img -->
         
 
-        <script>
-            window.addEventListener('DOMContentLoaded', () => {
-                document.querySelectorAll('img').forEach(img => {
-                    const src = img.getAttribute('src') || '';
-
-                    // Ignora SVGs embutidos
-                    if (src.startsWith('data:image/svg+xml')) return;
-                    if(img.classList.contains('keen-slider__slide')) return
-                    // const imageSlider = img.classList.contains('keen-slider__slide')
-                    console.log('clientWidth: ', img.clientWidth)
-                    console.log('clientHeight: ', img.clientWidth)
-                    const parent = img.parentElement;
-
-                    if (parent) {
-                        const width =  parent.clientWidth ;
-                        const height = parent.clientHeight;
-
-                        if (width && height) {
-
-
-                            // Adiciona "lazy" apenas se a imagem NÃO tiver a classe "lcp-img"
-                            if (!img.classList.contains('lcp-img')) {
-                                img.setAttribute('loading', 'lazy');
-                            }
-
-                                                        img.setAttribute('width', width);
-                            img.setAttribute('height', height);
-
-                            const absoluteSrc = new URL(src, window.location.origin);
-                            absoluteSrc.searchParams.set('width', width);
-                            absoluteSrc.searchParams.set('height', height);
-                            img.src = absoluteSrc.toString();
-                                                    }
-                    }
-                });
-            });
-            window.addEventListener('load', () => {
-                const images = document.querySelectorAll('.keen-slider__slide');
-
-                images.forEach(img => {
-                    const slideSrc = img.getAttribute('src') || '';
-                // Aguarda o carregamento de cada imagem (caso ainda não esteja carregada)
-                if (img.complete) {
-                    setSize(img, slideSrc);
-                } else {
-                    img.addEventListener('load', () => setSize(img, slideSrc));
-                }
-                });
-
-                function setSize(img, slideSrc) {
-
-                    if(!img.classList.contains('lcp-img')) {
-                        img.setAttribute('loading', 'lazy');
-                    }
-
-                                            img.setAttribute('width', img.clientWidth);
-                        img.setAttribute('height', img.clientHeight);
-
-                        const sliderAbsoluteSrc = new URL(slideSrc, window.location.origin);
-                        sliderAbsoluteSrc.searchParams.set('width', img.clientWidth);
-                        sliderAbsoluteSrc.searchParams.set('height', img.clientHeight);
-                        img.src = sliderAbsoluteSrc.toString();
-                                    }
-            });
-        </script>
+        
         <script>
             document.querySelectorAll('a.button-anchor-book-mark')
                 .forEach(anchor => {
