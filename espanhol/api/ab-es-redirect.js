@@ -10,8 +10,8 @@ export default function handler(req, res) {
   }
 
   const dest = variant === "v2"
-    ? "/espanhol/pat-es-v2/"
-    : "/espanhol/pat-es-v3/";
+    ? "/pat-es-v2/"
+    : "/pat-es-v3/";
 
   res.setHeader(
     "Set-Cookie",
