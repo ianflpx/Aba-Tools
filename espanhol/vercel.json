@@ -3,6 +3,6 @@
     "api/ab-es-redirect.js": { "runtime": "nodejs20.x" }
   },
   "redirects": [
-    { "source": "/espanhol/teste-ab", "destination": "/api/ab-es-redirect", "permanent": false }
+    { "source": "/teste-ab", "destination": "/api/ab-es-redirect", "permanent": false }
   ]
 }
