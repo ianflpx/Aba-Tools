@@ -9,7 +9,7 @@ module.exports = (req, res) => {
     variant = Math.random() < 0.5 ? "v2" : "v3";
   }
 
-  const dest = variant === "v2" ? "/pat-es-v2/" : "/pat-es-v3/";
+  const dest = variant === "v2" ? "/pat-v2/" : "/pat-v3/";
 
   res.setHeader(
     "Set-Cookie",
