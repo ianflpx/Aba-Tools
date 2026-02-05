@@ -17,7 +17,7 @@ module.exports = (req, res) => {
 
   // Define o destino base conforme a variante
   // Ajustei para "patv2" e "patv3" conforme você descreveu a estrutura de pastas
-  const basePath = variant === "v2" ? "/patv2/" : "/patv3/";
+  const basePath = variant === "v2" ? "/pat-v2/" : "/pat-v3/";
 
   // Monta a URL final concatenando o caminho e os parâmetros originais
   const dest = basePath + queryString;
