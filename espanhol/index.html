@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical Autism Transformation Toolkit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons Script -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #FFFFFF;
+      }
+      h1, h2, h3, h4 {
+        font-family: 'Montserrat', sans-serif;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      /* Accordion Styles */
+      .accordion-content {
+        transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+      }
+      .accordion-content.open {
+        opacity: 1;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2567825450265015');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2567825450265015&ev=PageView&noscript=1"
+/></noscript>
+
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  data-utmify-ignore-iframe
+  data-utmify-is-cartpanda
+  async
+  defer
+></script>
+    
+</head>
+  <body class="bg-white text-slate-900 overflow-x-hidden">
+    
+    <div class="min-h-screen font-sans bg-white text-slate-800">
+      <!-- Hero Section -->
+      <header class="pt-12 pb-16 px-4 max-w-4xl mx-auto text-center">
+        <div class="mb-6 flex flex-col items-center">
+           <img 
+             src="https://i.ibb.co/0RZ6tm2M/logo-abatools-escrita.png" 
+             alt="AbaTools Logo" 
+             class="h-8 md:h-10 w-auto object-contain mb-10"
+           />
+           
+           <span class="inline-block px-4 py-1 rounded-full bg-emerald-100 text-emerald-700 text-[12px] font-bold uppercase tracking-wider mb-4">
+             STOP CREATING MATERIALS FROM SCRATCH
+           </span>
+           <h1 class="text-3xl md:text-5xl font-black text-slate-900 leading-tight mb-6">
+             Teach communication skills to children with autism — <span class="font-extrabold text-slate-500">clearly, effectively, and without overwhelm.</span>
+           </h1>
+
+           <p class="text-base text-slate-600 mb-8 leading-relaxed">
+             <span class="text-[#05A045] font-bold">Ready-to-use, editable programs aligned with VB-MAPP</span> to teach Manding, Following Instructions, Tacting, and Imitation — <span class="font-bold">without guesswork, wasted hours, or burnout.</span>
+           </p>
+        </div>
+
+        <div class="max-w-[380px] md:max-w-[420px] mx-auto mb-10">
+          <img 
+            src="https://i.ibb.co/1fsYj5jW/pat-en-mockup.webp" 
+            alt="35 Naturalistic Protocols" 
+            class="w-full h-auto block mx-auto drop-shadow-2xl"
+          />
+        </div>
+
+        <div class="flex flex-col items-center mb-8">
+          <div class="flex -space-x-2.5 mb-4">
+            <img src="https://i.ibb.co/5gSpBsgq/cliente1.jpg" class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-white shadow-md object-cover" alt="Customer 1">
+            <img src="https://i.ibb.co/yn6tzmc4/cliente2.jpg" class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-white shadow-md object-cover" alt="Customer 2">
+            <img src="https://i.ibb.co/kVCrN9bb/cliente3.jpg" class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-white shadow-md object-cover" alt="Customer 3">
+            <img src="https://i.ibb.co/Q3R6XTYP/cliente5.jpg" class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-white shadow-md object-cover" alt="Customer 4">
+            <img src="https://i.ibb.co/MxT2m9ss/cliente8.jpg" class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-white shadow-md object-cover" alt="Customer 5">
+          </div>
+          <div class="flex items-center gap-1.5 mb-1">
+            <span class="font-black text-xl text-slate-900">4.9/5</span>
+            <div class="flex text-yellow-400">
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            </div>
+          </div>
+          <p class="text-slate-500 text-sm font-medium">(+38k satisfied professionals and families)</p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-x-2 gap-y-1 max-w-[320px] mx-auto mb-10 justify-items-center">
+          <div class="flex items-center gap-1.5 text-left py-1 px-1 w-full max-w-[140px]">
+            <i data-lucide="circle-check" class="w-4 h-4 text-[#05A045] shrink-0"></i>
+            <span class="text-slate-900 text-[11px] md:text-xs font-bold leading-tight whitespace-nowrap">Instant Access</span>
+          </div>
+          <div class="flex items-center gap-1.5 text-left py-1 px-1 w-full max-w-[140px]">
+            <i data-lucide="circle-check" class="w-4 h-4 text-[#05A045] shrink-0"></i>
+            <span class="text-slate-900 text-[11px] md:text-xs font-bold leading-tight whitespace-nowrap">Ready to Use</span>
+          </div>
+          <div class="flex items-center gap-1.5 text-left py-1 px-1 w-full max-w-[140px]">
+            <i data-lucide="circle-check" class="w-4 h-4 text-[#05A045] shrink-0"></i>
+            <span class="text-slate-900 text-[11px] md:text-xs font-bold leading-tight whitespace-nowrap">VB-MAPP–aligned</span>
+          </div>
+          <div class="flex items-center gap-1.5 text-left py-1 px-1 w-full max-w-[140px]">
+            <i data-lucide="circle-check" class="w-4 h-4 text-[#05A045] shrink-0"></i>
+            <span class="text-slate-900 text-[11px] md:text-xs font-bold leading-tight whitespace-nowrap">Step-by-Step Guide</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <button 
+            onclick="document.getElementById('offer-section').scrollIntoView({ behavior: 'smooth' })"
+            class="w-full max-md bg-[#05A045] hover:bg-[#048c3c] text-white text-xl font-black py-5 px-8 rounded-2xl shadow-xl transition-all hover:scale-105 active:scale-95 uppercase flex items-center justify-center gap-2"
+          >
+            GET MY KIT NOW
+          </button>
+          
+          <div class="mt-4 flex flex-col items-center text-slate-400 text-xs">
+            <div class="flex items-center gap-1.5 font-medium">
+              <p>You will receive instant access via email immediately after purchase.</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- For Whom Section -->
+      <section class="bg-slate-50 py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl md:text-5xl font-black text-center mb-12 text-slate-900 leading-tight uppercase">
+            WHO IS THIS MATERIAL FOR?
+          </h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Feature Card 1 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-start gap-4 hover:shadow-md transition-shadow">
+              <div class="shrink-0 p-3 bg-emerald-50 rounded-xl"><i data-lucide="stethoscope" class="w-8 h-8 text-[#05A045]"></i></div>
+              <div>
+                <h4 class="font-black text-slate-900 mb-1">ABA Professionals</h4>
+                <p class="text-sm text-slate-500 leading-relaxed">Professionals who want clearer, faster ABA sessions using ready-to-apply, easy-to-implement programs.</p>
+              </div>
+            </div>
+            <!-- Feature Card 2 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-start gap-4 hover:shadow-md transition-shadow">
+              <div class="shrink-0 p-3 bg-emerald-50 rounded-xl"><i data-lucide="heart" class="w-8 h-8 text-[#05A045]"></i></div>
+              <div>
+                <h4 class="font-black text-slate-900 mb-1">Therapists</h4>
+                <p class="text-sm text-slate-500 leading-relaxed">New or experienced therapists wanting to accelerate client progress without spending hours hand-crafting materials.</p>
+              </div>
+            </div>
+            <!-- Feature Card 3 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-start gap-4 hover:shadow-md transition-shadow">
+              <div class="shrink-0 p-3 bg-emerald-50 rounded-xl"><i data-lucide="users" class="w-8 h-8 text-[#05A045]"></i></div>
+              <div>
+                <h4 class="font-black text-slate-900 mb-1">Parents & Caregivers</h4>
+                <p class="text-sm text-slate-500 leading-relaxed">Parents who want to actively support communication development with simple, effective strategies at home.</p>
+              </div>
+            </div>
+            <!-- Feature Card 4 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-start gap-4 hover:shadow-md transition-shadow">
+              <div class="shrink-0 p-3 bg-emerald-50 rounded-xl"><i data-lucide="book-open" class="w-8 h-8 text-[#05A045]"></i></div>
+              <div>
+                <h4 class="font-black text-slate-900 mb-1">Students</h4>
+                <p class="text-sm text-slate-500 leading-relaxed">Students in ABA, Psychology, Education, or related fields seeking practical tools to build skills and confidence.</p>
+              </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-md border-2 border-[#05A045] md:col-span-2">
+              <h4 class="font-black text-[#05A045] mb-6 text-2xl text-center">This kit is for those who…</h4>
+              <ul class="space-y-4 max-w-3xl mx-auto">
+                <li class="flex items-start gap-3">
+                  <i data-lucide="check-circle" class="w-6 h-6 text-[#05A045] shrink-0"></i>
+                  <span class="text-base text-slate-700 font-medium leading-relaxed">Want ready-to-use protocols to teach Manding, Tacting, Imitation, and Listener Responding.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i data-lucide="check-circle" class="w-6 h-6 text-[#05A045] shrink-0"></i>
+                  <span class="text-base text-slate-700 font-medium leading-relaxed">Want to stop wasting hours creating programs from scratch.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <i data-lucide="check-circle" class="w-6 h-6 text-[#05A045] shrink-0"></i>
+                  <span class="text-base text-slate-700 font-medium leading-relaxed">Want maximum efficiency using scientifically validated programs for foundational skills — without unnecessary bureaucracy.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What you will receive section -->
+      <section class="bg-white py-24 px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl md:text-5xl font-black text-center mb-4 text-slate-900 leading-tight uppercase">WHAT WILL YOU LEARN?</h2>
+          <p class="text-center text-slate-500 text-lg mb-12 font-medium tracking-tight max-w-2xl mx-auto">You will learn, step by step,<span class="text-[#05A045] font-bold"> how to apply essential programs to develop communication skills in children with autism</span>, from foundational to more advanced levels.</p>
+          
+          <div class="flex justify-center mb-20">
+            <img 
+              src="https://i.ibb.co/1YrK49Jz/mockup2.webp" 
+              alt="Protocol Preview" 
+              class="w-full max-w-[600px] h-auto object-contain rounded-2xl"
+            />
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <!-- Pillar 1 -->
+            <div class="bg-white p-8 rounded-[2rem] border border-slate-200 shadow-sm relative overflow-hidden group hover:border-emerald-200 transition-colors h-full">
+              <div class="absolute -top-4 -left-4 w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-2xl font-black text-[#05A045] transition-transform">
+                1
+              </div>
+              <div class="ml-6 md:ml-10">
+                <h3 class="text-2xl font-black text-slate-900 mb-2 leading-tight">Mand</h3>
+                <h4 class="text-[#05A045] font-bold text-sm uppercase tracking-wider mb-4 leading-snug">Build Effective Communication</h4>
+                <div class="text-slate-600 font-medium leading-relaxed space-y-4 text-base">
+                  <p>15 practical programs teaching children to express needs and wants clearly, transforming frustration into functional communication and dramatically expanding their interaction and independence in daily life.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div class="bg-white p-8 rounded-[2rem] border border-slate-200 shadow-sm relative overflow-hidden group hover:border-emerald-200 transition-colors h-full">
+              <div class="absolute -top-4 -left-4 w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-2xl font-black text-[#05A045] transition-transform">
+                2
+              </div>
+              <div class="ml-6 md:ml-10">
+                <h3 class="text-2xl font-black text-slate-900 mb-2 leading-tight">Tact</h3>
+                <h4 class="text-[#05A045] font-bold text-sm uppercase tracking-wider mb-4 leading-snug">Expand Connection with the World</h4>
+                <div class="text-slate-600 font-medium leading-relaxed space-y-4 text-base">
+                  <p>15 programs teaching children to name and describe objects, people, and events in detail, transforming passive observation into expressive communication and deeply strengthening their ability to interpret and navigate their environment.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div class="bg-white p-8 rounded-[2rem] border border-slate-200 shadow-sm relative overflow-hidden group hover:border-emerald-200 transition-colors h-full">
+              <div class="absolute -top-4 -left-4 w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-2xl font-black text-[#05A045] transition-transform">
+                3
+              </div>
+              <div class="ml-6 md:ml-10">
+                <h3 class="text-2xl font-black text-slate-900 mb-2 leading-tight">Listener Responding</h3>
+                <h4 class="text-[#05A045] font-bold text-sm uppercase tracking-wider mb-4 leading-snug">Develop Instruction-Following Skills</h4>
+                <div class="text-slate-600 font-medium leading-relaxed space-y-4 text-base">
+                  <p>15 programs to improve the ability to follow instructions and respond to auditory stimuli—a foundational skill for learning and social interaction.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pillar 4 -->
+            <div class="bg-white p-8 rounded-[2rem] border border-slate-200 shadow-sm relative overflow-hidden group hover:border-emerald-200 transition-colors h-full">
+              <div class="absolute -top-4 -left-4 w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-2xl font-black text-[#05A045] transition-transform">
+                4
+              </div>
+              <div class="ml-6 md:ml-10">
+                <h3 class="text-2xl font-black text-slate-900 mb-2 leading-tight">Visual Perception & Match-to-Sample</h3>
+                <h4 class="text-[#05A045] font-bold text-sm uppercase tracking-wider mb-4 leading-snug">Strengthen Visual Recognition</h4>
+                <div class="text-slate-600 font-medium leading-relaxed space-y-4 text-base">
+                  <p>Step-by-step methods to teach children to recognize and match objects and images, boosting visual and cognitive skills essential for educational progress.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pillar 5 -->
+            <div class="bg-white p-8 rounded-[2rem] border border-slate-200 shadow-sm relative overflow-hidden group hover:border-emerald-200 transition-colors h-full md:col-span-2 md:w-3/4 md:mx-auto">
+              <div class="absolute -top-4 -left-4 w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-2xl font-black text-[#05A045] transition-transform">
+                5
+              </div>
+              <div class="ml-6 md:ml-10">
+                <h3 class="text-2xl font-black text-slate-900 mb-2 leading-tight">Imitation & Echoics</h3>
+                <h4 class="text-[#05A045] font-bold text-sm uppercase tracking-wider mb-4 leading-snug">Develop Core Learning Competencies</h4>
+                <div class="text-slate-600 font-medium leading-relaxed space-y-4 text-base">
+                  <p class="mb-4">Access 15+ practical programs teaching the child to replicate movements and vocalizations, developing crucial skills for absorbing new knowledge and behaviors.</p>
+                  <p>With Echoic techniques, you'll master methods to stimulate sound and word repetition, accelerating speech development and verbal expression.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bonus Section -->
+      <section class="py-24 px-4 bg-slate-50 overflow-hidden">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-16 flex flex-col items-center">
+            <i data-lucide="gift" class="w-12 h-12 text-[#E64A19] mb-4"></i>
+            <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-4 tracking-tight">
+              Fast-Action Bonuses
+            </h2>
+            <p class="text-lg md:text-xl text-slate-500 font-medium max-w-2xl mx-auto">
+              Get powerful bonuses designed to take your sessions to the next level!
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 mb-12">
+            <!-- Bonus 1 -->
+            <div class="bg-white border-4 border-dotted border-[#E64A19]/30 rounded-[3rem] p-8 md:p-12 relative flex flex-col items-center text-center shadow-xl">
+              <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#E64A19] text-white px-10 py-3 rounded-full font-black text-lg md:text-xl uppercase shadow-lg z-20 whitespace-nowrap">Bonus 01</div>
+              <div class="mt-4 mb-2">
+                <h3 class="text-2xl md:text-3xl font-black text-slate-900 leading-tight mb-4">ABA Data Collection & Tracking System</h3>
+                <div><p class="text-slate-600 text-sm md:text-base font-semibold leading-relaxed">A complete framework to document, record, and evaluate each child's skill development with total clarity and consistency.</p></div>
+              </div>
+              <div class="mt-auto w-full pt-2 flex flex-col items-center">
+                <img src="https://i.ibb.co/zVnSdX0t/B1.png" alt="Bonus 1" class="w-full h-auto max-w-[190px] mx-auto mb-4" />
+                <div class="text-slate-400 text-xs md:text-sm font-medium">Original Value: <span class="line-through text-red-500 font-bold">$37</span></div>
+                <div class="text-slate-800 text-lg font-black tracking-tighter mt-1 uppercase">TODAY: <span class="text-[#05A045]">FREE</span></div>
+              </div>
+            </div>
+
+            <!-- Bonus 2 -->
+            <div class="bg-white border-4 border-dotted border-[#E64A19]/30 rounded-[3rem] p-8 md:p-12 relative flex flex-col items-center text-center shadow-xl">
+              <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#E64A19] text-white px-10 py-3 rounded-full font-black text-lg md:text-xl uppercase shadow-lg z-20 whitespace-nowrap">Bonus 02</div>
+              <div class="mt-4 mb-2">
+                <h3 class="text-2xl md:text-3xl font-black text-slate-900 leading-tight mb-4">Parent & Caregiver Checklist<span class="block text-lg md:text-xl font-bold text-slate-600 mt-2">Stimulating Communication In Daily Life</span></h3>
+                <div><p class="text-slate-600 text-sm md:text-base font-semibold leading-relaxed">A practical guide with simple, everyday actions that create more natural communication opportunities throughout the day.</p></div>
+              </div>
+              <div class="mt-auto w-full pt-2 flex flex-col items-center">
+                <img src="https://i.ibb.co/hJfyMrr9/B2-removebg-preview.png" alt="Bonus 2" class="w-full h-auto max-w-[190px] mx-auto mb-4" />
+                <div class="text-slate-400 text-xs md:text-sm font-medium">Original Value: <span class="line-through text-red-500 font-bold">$15</span></div>
+                <div class="text-slate-800 text-lg font-black tracking-tighter mt-1 uppercase">TODAY: <span class="text-[#05A045]">FREE</span></div>
+              </div>
+            </div>
+
+            <!-- Bonus 3 -->
+            <div class="bg-white border-4 border-dotted border-[#E64A19]/30 rounded-[3rem] p-8 md:p-12 relative flex flex-col items-center text-center shadow-xl">
+              <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#E64A19] text-white px-10 py-3 rounded-full font-black text-lg md:text-xl uppercase shadow-lg z-20 whitespace-nowrap">Bonus 03</div>
+              <div class="mt-4 mb-2">
+                <h3 class="text-2xl md:text-3xl font-black text-slate-900 leading-tight mb-4">Strategic Error Correction Protocol</h3>
+                <div><p class="text-slate-600 text-sm md:text-base font-semibold leading-relaxed">A complete protocol that turns errors into quick learning opportunities without frustration, using a clear and systematic approach.</p></div>
+              </div>
+              <div class="mt-auto w-full pt-2 flex flex-col items-center">
+                <img src="https://i.ibb.co/5xYcg0Hc/b3-removebg-preview.png" alt="Bonus 3" class="w-full h-auto max-w-[190px] mx-auto mb-4" />
+                <div class="text-slate-400 text-xs md:text-sm font-medium">Original Value: <span class="line-through text-red-500 font-bold">$29</span></div>
+                <div class="text-slate-800 text-lg font-black tracking-tighter mt-1 uppercase">TODAY: <span class="text-[#05A045]">FREE</span></div>
+              </div>
+            </div>
+
+            <!-- Bonus 4 -->
+            <div class="bg-white border-4 border-dotted border-[#E64A19]/30 rounded-[3rem] p-8 md:p-12 relative flex flex-col items-center text-center shadow-xl">
+              <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#E64A19] text-white px-10 py-3 rounded-full font-black text-lg md:text-xl uppercase shadow-lg z-20 whitespace-nowrap">Bonus 04</div>
+              <div class="mt-4 mb-2">
+                <h3 class="text-2xl md:text-3xl font-black text-slate-900 leading-tight mb-4">ABA Facilitation & Engagement Techniques</h3>
+                <div><p class="text-slate-600 text-sm md:text-base font-semibold leading-relaxed">Practical techniques to make teaching easier, increase engagement, and keep the child actively participating throughout the session.</p></div>
+              </div>
+              <div class="mt-auto w-full pt-2 flex flex-col items-center">
+                <img src="https://i.ibb.co/b5vcz562/B44-removebg-preview.png" alt="Bonus 4" class="w-full h-auto max-w-[190px] mx-auto mb-4" />
+                <div class="text-slate-400 text-xs md:text-sm font-medium">Original Value: <span class="line-through text-red-500 font-bold">$37</span></div>
+                <div class="text-slate-800 text-lg font-black tracking-tighter mt-1 uppercase">TODAY: <span class="text-[#05A045]">FREE</span></div>
+              </div>
+            </div>
+
+            <!-- Bonus 5 -->
+            <div class="bg-white border-4 border-dotted border-[#E64A19]/30 rounded-[3rem] p-8 md:p-12 relative flex flex-col items-center text-center shadow-xl">
+              <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#E64A19] text-white px-10 py-3 rounded-full font-black text-lg md:text-xl uppercase shadow-lg z-20 whitespace-nowrap">Bonus 05</div>
+              <div class="mt-4 mb-2">
+                <h3 class="text-2xl md:text-3xl font-black text-slate-900 leading-tight mb-4">Parent & Caregiver Checklist<span class="block text-lg md:text-xl font-bold text-slate-600 mt-2">Strengthening Listener Skills At Home</span></h3>
+                <div><p class="text-slate-600 text-sm md:text-base font-semibold leading-relaxed">Simple, effective strategies to help parents reinforce instruction-following and auditory attention during daily routines at home.</p></div>
+              </div>
+              <div class="mt-auto w-full pt-2 flex flex-col items-center">
+                <img src="https://i.ibb.co/s9S6sjkF/b55-removebg-preview.png" alt="Bonus 5" class="w-full h-auto max-w-[190px] mx-auto mb-4" />
+                <div class="text-slate-400 text-xs md:text-sm font-medium">Original Value: <span class="line-through text-red-500 font-bold">$15</span></div>
+                <div class="text-slate-800 text-lg font-black tracking-tighter mt-1 uppercase">TODAY: <span class="text-[#05A045]">FREE</span></div>
+              </div>
+            </div>
+
+            <!-- Bonus 6 -->
+            <div class="bg-white border-4 border-dotted border-[#E64A19]/30 rounded-[3rem] p-8 md:p-12 relative flex flex-col items-center text-center shadow-xl">
+              <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#E64A19] text-white px-10 py-3 rounded-full font-black text-lg md:text-xl uppercase shadow-lg z-20 whitespace-nowrap">Bonus 06</div>
+              <div class="mt-4 mb-2">
+                <h3 class="text-2xl md:text-3xl font-black text-slate-900 leading-tight mb-4">ABA Motivation & Reinforcement Strategies</h3>
+                <div><p class="text-slate-600 text-sm md:text-base font-semibold leading-relaxed">A complete guide to identifying, selecting, and using effective reinforcers—the key ingredient to accelerating progress.</p></div>
+              </div>
+              <div class="mt-auto w-full pt-2 flex flex-col items-center">
+                <img src="https://i.ibb.co/ycsCnjcJ/B66-removebg-preview.png" alt="Bonus 6" class="w-full h-auto max-w-[190px] mx-auto mb-4" />
+                <div class="text-slate-400 text-xs md:text-sm font-medium">Original Value: <span class="line-through text-red-500 font-bold">$37</span></div>
+                <div class="text-slate-800 text-lg font-black tracking-tighter mt-1 uppercase">TODAY: <span class="text-[#05A045]">FREE</span></div>
+              </div>
+            </div>
+
+            <!-- Bonus 7 -->
+            <div class="bg-white border-4 border-dotted border-[#E64A19]/30 rounded-[3rem] p-8 md:p-12 relative flex flex-col items-center text-center shadow-xl">
+              <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#E64A19] text-white px-10 py-3 rounded-full font-black text-lg md:text-xl uppercase shadow-lg z-20 whitespace-nowrap">Bonus 07</div>
+              <div class="mt-4 mb-2">
+                <h3 class="text-2xl md:text-3xl font-black text-slate-900 leading-tight mb-4">Reinforcer Expansion Guide</h3>
+                <div><p class="text-slate-600 text-sm md:text-base font-semibold leading-relaxed">Practical methods to expand the child's variety of reinforcers and keep motivation high over the long term.</p></div>
+              </div>
+              <div class="mt-auto w-full pt-2 flex flex-col items-center">
+                <img src="https://i.ibb.co/hFwdgL7M/B77-removebg-preview.png" alt="Bonus 7" class="w-full h-auto max-w-[190px] mx-auto mb-4" />
+                <div class="text-slate-400 text-xs md:text-sm font-medium">Original Value: <span class="line-through text-red-500 font-bold">$47</span></div>
+                <div class="text-slate-800 text-lg font-black tracking-tighter mt-1 uppercase">TODAY: <span class="text-[#05A045]">FREE</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate Card (Bonus 05 context, labeled as certificate) -->
+          <div class="max-w-3xl mx-auto mt-8">
+            <div class="bg-white border-4 border-dotted border-[#05A045]/30 rounded-[3rem] p-8 md:p-12 relative flex flex-col items-center text-center shadow-xl">
+              <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#05A045] text-white px-10 py-3 rounded-full font-black text-lg md:text-xl uppercase shadow-lg z-20 whitespace-nowrap">
+                CERTIFICATE
+              </div>
+              
+              <div class="mt-4 mb-8">
+                <h3 class="text-2xl md:text-3xl font-black text-slate-900 leading-tight mb-6">
+                  VB-MAPP Implementation Certificate
+                </h3>
+                
+                <p class="text-slate-600 text-sm md:text-base font-semibold leading-relaxed">
+                  Turn access to these tools into a career advantage. Upon completing the essential programs in the Practical Autism Transformation Toolkit, your Certificate of Implementation for VB-MAPP Skills will be generated automatically, validating your competence to apply protocols that generate real results.
+                </p>
+              </div>
+
+              <div class="mt-auto w-full pt-4 flex flex-col items-center">
+                <img 
+                  src="https://i.ibb.co/60D5PzS6/certi-en.png" 
+                  alt="VB-MAPP Implementation Certificate" 
+                  class="w-full h-auto max-w-[400px] mx-auto mb-4 rounded-lg shadow-sm" 
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it Works Section -->
+      <section class="bg-white py-24 px-4">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl md:text-5xl font-black text-center mb-4 text-slate-900 leading-tight uppercase">HOW IT WORKS</h2>
+          <p class="text-center text-slate-500 text-lg mb-20 font-medium tracking-tight">Your simple 3-step path to real results</p>
+          
+          <div class="space-y-20 relative">
+            <!-- Connecting Line (Desktop) -->
+            <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-slate-100 -translate-x-1/2 z-0"></div>
+
+            <!-- Step 1 -->
+            <div class="flex flex-col items-center group relative z-10">
+              <div class="w-16 h-16 bg-[#0A58B1] text-white rounded-full flex items-center justify-center text-2xl font-black mb-8 shadow-lg shadow-blue-50">
+                1
+              </div>
+              <div class="flex flex-col md:flex-row items-center gap-2 md:gap-3 mb-4 justify-center">
+                <i data-lucide="zap" class="w-7 h-7 text-[#0A58B1] shrink-0"></i>
+                <h3 class="text-2xl md:text-3xl font-black text-slate-900">Instant Access</h3>
+              </div>
+              <p class="text-slate-500 text-base leading-relaxed max-w-lg font-medium">
+                As soon as your order is confirmed, the direct access link arrives in your inbox. No waiting—start applying this Kit in minutes.
+              </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="flex flex-col items-center group relative z-10">
+              <div class="w-16 h-16 bg-[#0A58B1] text-white rounded-full flex items-center justify-center text-2xl font-black mb-8 shadow-lg shadow-blue-50">
+                2
+              </div>
+              <div class="flex flex-col md:flex-row items-center gap-2 md:gap-3 mb-4 justify-center">
+                <i data-lucide="printer" class="w-7 h-7 text-[#0A58B1] shrink-0"></i>
+                <h3 class="text-2xl md:text-3xl font-black text-slate-900">Total Flexibility</h3>
+              </div>
+              <p class="text-slate-500 text-base leading-relaxed max-w-lg font-medium">
+                Access programs on your phone, tablet, or print them for physical use. Strategies ready for the clinic, home, or classroom.
+              </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="flex flex-col items-center group relative z-10">
+              <div class="w-16 h-16 bg-[#0A58B1] text-white rounded-full flex items-center justify-center text-2xl font-black mb-8 shadow-lg shadow-blue-50">
+                3
+              </div>
+              <div class="flex flex-col md:flex-row items-center gap-2 md:gap-3 mb-4 justify-center">
+                <i data-lucide="line-chart" class="w-7 h-7 text-[#0A58B1] shrink-0"></i>
+                <h3 class="text-2xl md:text-3xl font-black text-slate-900">Real Connection & Progress</h3>
+              </div>
+              <p class="text-slate-500 text-base leading-relaxed max-w-lg font-medium">
+                Turn therapy into moments of genuine learning. Follow the step-by-step guide and boost the child's communication skills—clearly, professionally, and effectively.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- New Offer Section -->
+      <section id="offer-section" class="py-24 px-4 bg-slate-50">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-16 flex flex-col items-center">
+            <i data-lucide="tag" class="w-10 h-10 text-[#05A045] mb-4"></i>
+            <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-4 tracking-tight">
+              CHOOSE YOUR KIT
+            </h2>
+            <p class="text-lg md:text-xl text-slate-500 font-medium max-w-2xl mx-auto">
+              97% of customers choose the Complete Package for maximum value and minimal price difference.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start max-w-5xl mx-auto">
+            <!-- Basic Kit -->
+            <div class="flex flex-col">
+              <div class="bg-slate-100 border-2 border-slate-300 rounded-[2.5rem] p-8 md:p-10 shadow-lg relative flex flex-col h-full grayscale-[0.3]">
+                <div class="mb-8 text-center">
+                  <h3 class="text-2xl font-black text-slate-700 mb-2 uppercase tracking-tighter">Basic Kit</h3>
+                  <div class="flex items-baseline justify-center gap-1 mb-6">
+                    <span class="text-xl font-bold text-slate-500">$</span>
+                    <span class="text-6xl md:text-7xl font-black text-slate-700 tracking-tighter">9</span>
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                   <h4 class="text-slate-500 text-sm md:text-base font-black mb-4 px-1">What's included:</h4>
+                   <div class="space-y-4 mb-10">
+                    
+                    <div class="flex items-start gap-3 text-slate-700">
+                      <div class="mt-0.5 bg-emerald-100 rounded-full p-0.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i></div>
+                      <div class="flex flex-wrap items-baseline gap-1.5 leading-tight"><span class="text-sm md:text-base font-semibold"><span><span class="font-extrabold">Practical Autism Transformation Toolkit</span>: Essential VB-MAPP Skills</span></span></div>
+                    </div>
+
+                    <div class="flex items-start gap-3 text-slate-400">
+                      <div class="mt-0.5 bg-red-50 rounded-full p-0.5"><i data-lucide="x" class="w-3.5 h-3.5 text-red-400"></i></div>
+                      <div class="flex flex-wrap items-baseline gap-1.5 leading-tight"><span class="text-sm md:text-base line-through opacity-70 font-semibold">Lifetime Access</span></div>
+                    </div>
+
+                    <div class="flex items-start gap-3 text-slate-400">
+                      <div class="mt-0.5 bg-red-50 rounded-full p-0.5"><i data-lucide="x" class="w-3.5 h-3.5 text-red-400"></i></div>
+                      <div class="flex flex-wrap items-baseline gap-1.5 leading-tight"><span class="text-sm md:text-base line-through opacity-70 font-semibold">The 7 Exclusive Bonuses</span></div>
+                    </div>
+
+                    <div class="flex items-start gap-3 text-slate-400">
+                      <div class="mt-0.5 bg-red-50 rounded-full p-0.5"><i data-lucide="x" class="w-3.5 h-3.5 text-red-400"></i></div>
+                      <div class="flex flex-wrap items-baseline gap-1.5 leading-tight"><span class="text-sm md:text-base line-through opacity-70 font-semibold">VIP Community Access</span></div>
+                    </div>
+
+                    <div class="flex items-start gap-3 text-slate-400">
+                      <div class="mt-0.5 bg-red-50 rounded-full p-0.5"><i data-lucide="x" class="w-3.5 h-3.5 text-red-400"></i></div>
+                      <div class="flex flex-wrap items-baseline gap-1.5 leading-tight"><span class="text-sm md:text-base line-through opacity-70 font-semibold">VB-MAPP Implementation Certificate</span></div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="mt-auto flex flex-col items-center mb-6">
+                  <div class="text-red-600 font-black text-lg line-through mb-1 opacity-80">Regular $49</div>
+                  <div class="text-slate-900 font-black text-xl mb-1">Only Today</div>
+                  <div class="flex items-baseline justify-center gap-1 mb-4">
+                    <span class="text-xl font-bold text-slate-500">$</span>
+                    <span class="text-6xl md:text-7xl font-black text-slate-700 tracking-tighter">9</span>
+                  </div>
+                </div>
+
+                <a 
+                  href="https://pay.abatools.pro/checkout/195726115:1"
+                  class="w-full bg-slate-400 hover:bg-slate-500 text-white py-4 rounded-2xl font-black text-xl transition-all text-center uppercase shadow-md mb-4 block"
+                >
+                  SELECT BASIC KIT
+                </a>
+
+                <!-- Trust Badges Basic -->
+                <div class="mt-auto flex items-center justify-center gap-4 text-slate-400">
+                  <div class="flex items-center gap-1.5 font-bold text-[10px] md:text-xs uppercase tracking-tight">
+                    <i data-lucide="zap" class="w-3.5 h-3.5 fill-current"></i>
+                    INSTANT ACCESS
+                  </div>
+                  <div class="flex items-center gap-1.5 font-bold text-[10px] md:text-xs uppercase tracking-tight">
+                    <i data-lucide="shopping-cart" class="w-3.5 h-3.5"></i>
+                    ONE-TIME PAYMENT
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mobile-only alert -->
+              <div class="md:hidden mt-8 flex flex-col items-center text-center px-4 animate-bounce">
+                <i data-lucide="arrow-down" class="w-8 h-8 text-[#05A045] mb-2"></i>
+                <p class="text-[#05A045] font-black text-sm uppercase leading-tight">
+                  WAIT! CHECK THE OFFER BELOW, IT MIGHT BE BETTER FOR YOU...
+                </p>
+              </div>
+            </div>
+
+            <!-- Complete Kit -->
+            <div class="bg-white border-4 border-[#05A045] rounded-[2.5rem] p-8 md:p-10 shadow-2xl relative flex flex-col h-full transform md:scale-105 z-10">
+              <!-- Badge -->
+              <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-[#FFD2C1] text-[#E64A19] px-6 py-2.5 rounded-2xl font-black text-sm shadow-sm whitespace-nowrap flex items-center gap-2 border border-[#E64A19]/10 uppercase tracking-wide">
+                <div class="flex items-center gap-1">
+                  <i data-lucide="flame" class="w-4 h-4 fill-current"></i>
+                  MOST POPULAR
+                </div>
+              </div>
+              
+              <div class="mt-6 mb-8 text-center">
+                <h3 class="text-2xl font-black text-slate-900 mb-2 uppercase tracking-tighter">Complete Kit</h3>
+                <div class="flex items-baseline justify-center gap-1 mb-6">
+                  <span class="text-xl font-bold text-slate-500">$</span>
+                  <span class="text-6xl md:text-7xl font-black text-[#05A045] tracking-tighter">17</span>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h4 class="text-slate-700 text-sm md:text-base font-black mb-4 px-1">What's included:</h4>
+                <div class="space-y-4 mb-10">
+                  
+                  <div class="flex items-start gap-3 text-slate-700">
+                    <div class="mt-0.5 bg-emerald-100 rounded-full p-0.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i></div>
+                    <div class="flex flex-wrap items-baseline gap-1.5 leading-tight"><span class="text-sm md:text-base font-semibold"><span><span class="font-extrabold">Practical Autism Transformation Toolkit</span>: Essential VB-MAPP Skills</span></span></div>
+                  </div>
+
+                  <div class="flex items-start gap-3 text-slate-700">
+                    <div class="mt-0.5 bg-emerald-100 rounded-full p-0.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i></div>
+                    <div class="flex flex-wrap items-baseline gap-1.5 leading-tight"><span class="text-sm md:text-base font-semibold">Lifetime Access</span></div>
+                  </div>
+
+                  <!-- Bonuses List -->
+                  <div class="flex items-start gap-3 text-slate-700">
+                    <div class="mt-0.5 bg-emerald-100 rounded-full p-0.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i></div>
+                    <div class="flex flex-wrap items-baseline gap-1.5 leading-tight"><span class="text-sm md:text-base font-semibold"><strong class="font-extrabold mr-1">Bonus 1:</strong>ABA Data Collection & Tracking System</span></div>
+                  </div>
+                  <div class="flex items-start gap-3 text-slate-700">
+                    <div class="mt-0.5 bg-emerald-100 rounded-full p-0.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i></div>
+                    <div class="flex flex-wrap items-baseline gap-1.5 leading-tight"><span class="text-sm md:text-base font-semibold"><strong class="font-extrabold mr-1">Bonus 2:</strong>Parent & Caregiver Checklist: Stimulating Communication in Daily Life</span></div>
+                  </div>
+                  <div class="flex items-start gap-3 text-slate-700">
+                    <div class="mt-0.5 bg-emerald-100 rounded-full p-0.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i></div>
+                    <div class="flex flex-wrap items-baseline gap-1.5 leading-tight"><span class="text-sm md:text-base font-semibold"><strong class="font-extrabold mr-1">Bonus 3:</strong>Strategic Error Correction Protocol</span></div>
+                  </div>
+                  <div class="flex items-start gap-3 text-slate-700">
+                    <div class="mt-0.5 bg-emerald-100 rounded-full p-0.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i></div>
+                    <div class="flex flex-wrap items-baseline gap-1.5 leading-tight"><span class="text-sm md:text-base font-semibold"><strong class="font-extrabold mr-1">Bonus 4:</strong>ABA Facilitation & Engagement Techniques</span></div>
+                  </div>
+                  <div class="flex items-start gap-3 text-slate-700">
+                    <div class="mt-0.5 bg-emerald-100 rounded-full p-0.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i></div>
+                    <div class="flex flex-wrap items-baseline gap-1.5 leading-tight"><span class="text-sm md:text-base font-semibold"><strong class="font-extrabold mr-1">Bonus 5:</strong>Parent & Caregiver Checklist: Strengthening Listener Skills at Home</span></div>
+                  </div>
+                  <div class="flex items-start gap-3 text-slate-700">
+                    <div class="mt-0.5 bg-emerald-100 rounded-full p-0.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i></div>
+                    <div class="flex flex-wrap items-baseline gap-1.5 leading-tight"><span class="text-sm md:text-base font-semibold"><strong class="font-extrabold mr-1">Bonus 6:</strong>ABA Motivation & Reinforcement Strategies</span></div>
+                  </div>
+                  <div class="flex items-start gap-3 text-slate-700">
+                    <div class="mt-0.5 bg-emerald-100 rounded-full p-0.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i></div>
+                    <div class="flex flex-wrap items-baseline gap-1.5 leading-tight"><span class="text-sm md:text-base font-semibold"><strong class="font-extrabold mr-1">Bonus 7:</strong>Reinforcer Expansion Guide</span></div>
+                  </div>
+
+                  <div class="flex items-start gap-3 text-slate-700">
+                    <div class="mt-0.5 bg-emerald-100 rounded-full p-0.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i></div>
+                    <div class="flex flex-wrap items-baseline gap-1.5 leading-tight"><span class="text-sm md:text-base font-semibold">VIP Community Access</span></div>
+                  </div>
+                  <div class="flex items-start gap-3 text-slate-700">
+                    <div class="mt-0.5 bg-emerald-100 rounded-full p-0.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i></div>
+                    <div class="flex flex-wrap items-baseline gap-1.5 leading-tight"><span class="text-sm md:text-base font-semibold">VB-MAPP Implementation Certificate</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-auto flex flex-col items-center mb-8">
+                <div class="text-red-600 font-black text-lg line-through mb-1 opacity-80">Regular $230</div>
+                <div class="text-slate-900 font-black text-xl mb-1">Only Today</div>
+                <div class="flex items-baseline justify-center gap-1">
+                  <span class="text-xl font-bold text-slate-500">$</span>
+                  <span class="text-6xl md:text-7xl font-black text-[#05A045] tracking-tighter">17</span>
+                </div>
+              </div>
+
+              <a 
+                href="https://pay.abatools.pro/checkout/195726155:1"
+                class="w-full bg-[#05A045] hover:bg-[#048c3c] text-white py-6 rounded-2xl font-black text-2xl transition-all shadow-xl hover:scale-105 active:scale-95 text-center uppercase mb-4 block"
+              >
+                GET COMPLETE ACCESS
+              </a>
+              
+              <!-- Trust Badges -->
+              <div class="mt-auto flex items-center justify-center gap-4 text-slate-400">
+                <div class="flex items-center gap-1.5 font-bold text-[10px] md:text-xs uppercase tracking-tight">
+                  <i data-lucide="zap" class="w-3.5 h-3.5 fill-current"></i>
+                  INSTANT ACCESS
+                </div>
+                <div class="flex items-center gap-1.5 font-bold text-[10px] md:text-xs uppercase tracking-tight">
+                  <i data-lucide="shopping-cart" class="w-3.5 h-3.5"></i>
+                  ONE-TIME PAYMENT
+                </div>
+              </div>
+              
+              <div class="mt-6 flex justify-center">
+                 <img src="https://i.ibb.co/6cYY4D4s/selos-removebg-preview.png" alt="Accepted Payment Methods" class="h-10 md:h-12 opacity-90 object-contain" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Scarcity Alert Block - Mobile Only -->
+          <div class="md:hidden mt-16 max-w-2xl mx-auto bg-red-500/5 rounded-[2.5rem] p-8 text-center shadow-2xl relative overflow-hidden border-2 border-red-200">
+            <div class="absolute top-0 left-0 w-full h-1.5 bg-red-600"></div>
+            
+            <div class="flex flex-col items-center gap-6 relative z-10">
+              <div class="w-20 h-20 bg-red-600/10 rounded-full flex items-center justify-center border border-red-600/20">
+                <i data-lucide="clock" class="w-10 h-10 text-red-600 animate-pulse"></i>
+              </div>
+              
+              <div class="space-y-4">
+                <h3 class="text-xl font-black text-red-600 uppercase tracking-widest flex items-center justify-center gap-3">
+                   ATTENTION:
+                </h3>
+                
+                <p class="text-slate-700 text-base font-medium leading-relaxed">
+                  This premium offer expires today, <span class="text-red-600 font-black underline decoration-red-600/30 dynamic-day">Day</span>, <span class="text-red-600 font-black dynamic-date">Date</span>. Afterwards, the price returns to <span class="text-slate-400 font-black line-through italic decoration-2">$230</span>.
+                </p>
+                
+                <div class="pt-6 border-t border-red-200 flex flex-col items-center gap-3">
+                  <p class="text-red-700 font-black text-sm uppercase tracking-tighter text-center">
+                    DON'T MISS OUT — PAY ONCE, OWN IT FOREVER.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Social Proof Section -->
+      <section class="bg-white py-24 px-4 overflow-hidden">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-16">
+            <div class="inline-flex items-center justify-center gap-2 bg-emerald-100 text-[#05A045] px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest mb-6">
+              <i data-lucide="thumbs-up" class="w-4 h-4"></i>
+              REAL TESTIMONIALS
+            </div>
+            <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-4 tracking-tight uppercase leading-tight">
+              THOSE WHO STARTED DON'T REGRET IT!
+            </h2>
+            <p class="text-lg md:text-xl text-slate-500 font-medium max-w-2xl mx-auto">
+              See what verified users say about this material:
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center gap-8 md:gap-12">
+            <div class="w-full max-w-sm">
+              <img src="https://i.ibb.co/N2YHnhkt/depo1.webp" alt="Testimonial 1" class="w-full h-auto rounded-[2rem] shadow-xl md:shadow-2xl border border-slate-100" loading="lazy" />
+            </div>
+            <div class="w-full max-w-sm">
+              <img src="https://i.ibb.co/cKYdfw7M/depo2.webp" alt="Testimonial 2" class="w-full h-auto rounded-[2rem] shadow-xl md:shadow-2xl border border-slate-100" loading="lazy" />
+            </div>
+            <div class="w-full max-w-sm">
+              <img src="https://i.ibb.co/RGS10vP5/depo3.webp" alt="Testimonial 3" class="w-full h-auto rounded-[2rem] shadow-xl md:shadow-2xl border border-slate-100" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Warranty Section -->
+      <section class="py-24 px-4 bg-white">
+        <div class="max-w-5xl mx-auto">
+          <div class="bg-white rounded-[3rem] md:rounded-[4rem] p-8 md:p-16 lg:p-20 shadow-2xl border-2 border-yellow-400 relative overflow-hidden flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div class="w-full md:w-1/3 flex justify-center">
+              <img 
+                src="https://i.ibb.co/pvkdDKGn/garantia.png" 
+                alt="Warranty Seal" 
+                class="w-full max-w-[240px] md:max-w-full h-auto object-contain drop-shadow-lg"
+              />
+            </div>
+            
+            <div class="w-full md:w-2/3 text-center md:text-left">
+              <div class="inline-flex items-center gap-2 bg-yellow-50 text-yellow-700 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest mb-6">
+                <i data-lucide="shield-check" class="w-4 h-4"></i>
+                ZERO RISK FOR YOU
+              </div>
+              
+              <h2 class="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 leading-tight mb-2 uppercase">
+                WE STAND BEHIND OUR WORK 100%!
+              </h2>
+              <h3 class="text-xl md:text-2xl font-bold text-yellow-600 mb-8">
+                30-Day Unconditional Guarantee
+              </h3>
+              
+              <div class="space-y-6 text-slate-600 text-base md:text-lg leading-relaxed font-medium">
+                <p>
+                  When you secure the <strong>Practical Autism Transformation Toolkit</strong> today, you have 30 full days to test the material and apply the strategies in your clinic or at home. If for any reason you feel the content doesn't meet your expectations, simply contact us and we will refund <strong class="text-yellow-700">100% of your investment</strong>, no questions asked.
+                </p>
+                <p>
+                  We are fully confident in the quality of these VB-MAPP–aligned protocols and want you to feel completely secure in your decision. Test drive all the ready-to-use materials with absolutely zero financial risk.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Who Created Section -->
+      <section class="py-24 px-4 bg-white">
+        <div class="max-w-4xl mx-auto flex flex-col items-center text-center">
+          <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-10 leading-tight uppercase">
+            WHO CREATED THIS PROGRAM?
+          </h2>
+          
+          <div class="w-full max-w-2xl mb-12">
+            <img 
+              src="https://i.ibb.co/MDdmh2cN/insta.png" 
+              alt="Who Created the Material" 
+              class="w-full h-auto rounded-[2.5rem] border-4 border-slate-50 object-cover"
+            />
+          </div>
+
+          <div class="space-y-6 text-slate-500 text-base md:text-lg leading-relaxed font-medium max-w-3xl">
+            <p>
+              <strong class="text-slate-700 font-bold">ABA Tools</strong> is formed by <strong class="text-slate-700 font-bold">Applied Behavior Analysis (ABA)</strong> specialists focused on transforming complex science into <strong class="text-slate-700 font-bold">practical tools</strong> for your daily life.
+            </p>
+            <p>
+              Our team has extensive clinical experience in communication development and functional skills. This material was designed specifically to align with <strong class="text-slate-700 font-bold">VB-MAPP</strong>, eliminating the red tape and planning hours so you can focus on what matters: the child's progress.
+            </p>
+            <p>
+              Join over <strong class="text-slate-700 font-bold">38,000 professionals and families</strong> who already use our resources to achieve real, rapid results based on solid scientific evidence.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="py-24 px-4 max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-5xl font-black text-center mb-12 uppercase">FREQUENTLY ASKED QUESTIONS</h2>
+        <div class="space-y-4 mb-16">
+           
+           <!-- FAQ Item 1 -->
+           <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm transition-all hover:border-emerald-100">
+             <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex justify-between items-center group">
+               <span class="text-lg font-bold text-slate-900 transition-colors">Is this suitable for beginners?</span>
+               <i data-lucide="chevron-down" class="accordion-icon w-6 h-6 shrink-0 text-slate-400"></i>
+             </button>
+             <div class="accordion-content">
+               <div class="p-6 text-slate-500 leading-relaxed bg-slate-50/50">
+                 Perfectly! The material was designed for every knowledge level. It guides you step-by-step, with practical examples, so you can apply it even without prior experience.
+               </div>
+             </div>
+           </div>
+
+           <!-- FAQ Item 2 -->
+           <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm transition-all hover:border-emerald-100">
+             <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex justify-between items-center group">
+               <span class="text-lg font-bold text-slate-900 transition-colors">Is payment secure?</span>
+               <i data-lucide="chevron-down" class="accordion-icon w-6 h-6 shrink-0 text-slate-400"></i>
+             </button>
+             <div class="accordion-content">
+               <div class="p-6 text-slate-500 leading-relaxed bg-slate-50/50">
+                 Totally secure. We use one of the world's largest and most reliable payment platforms, featuring bank-grade encryption and total data protection.
+               </div>
+             </div>
+           </div>
+
+           <!-- FAQ Item 3 -->
+           <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm transition-all hover:border-emerald-100">
+             <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex justify-between items-center group">
+               <span class="text-lg font-bold text-slate-900 transition-colors">Is there a guarantee?</span>
+               <i data-lucide="chevron-down" class="accordion-icon w-6 h-6 shrink-0 text-slate-400"></i>
+             </button>
+             <div class="accordion-content">
+               <div class="p-6 text-slate-500 leading-relaxed bg-slate-50/50">
+                 Yes! A 30-day unconditional guarantee. Test all the kit materials. If you aren't satisfied for any reason, we will refund 100% of your investment with no red tape or questions asked.
+               </div>
+             </div>
+           </div>
+
+           <!-- FAQ Item 4 -->
+           <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm transition-all hover:border-emerald-100">
+             <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex justify-between items-center group">
+               <span class="text-lg font-bold text-slate-900 transition-colors">Do I get material updates?</span>
+               <i data-lucide="chevron-down" class="accordion-icon w-6 h-6 shrink-0 text-slate-400"></i>
+             </button>
+             <div class="accordion-content">
+               <div class="p-6 text-slate-500 leading-relaxed bg-slate-50/50">
+                 Yes! Whenever there are updates or improvements to the kit, you will receive the latest version directly in your email at no additional cost.
+               </div>
+             </div>
+           </div>
+
+           <!-- FAQ Item 5 -->
+           <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm transition-all hover:border-emerald-100">
+             <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex justify-between items-center group">
+               <span class="text-lg font-bold text-slate-900 transition-colors">How will I receive the material?</span>
+               <i data-lucide="chevron-down" class="accordion-icon w-6 h-6 shrink-0 text-slate-400"></i>
+             </button>
+             <div class="accordion-content">
+               <div class="p-6 text-slate-500 leading-relaxed bg-slate-50/50">
+                 Instant access! After payment confirmation, you will receive all PDF materials directly in your email.
+               </div>
+             </div>
+           </div>
+
+        </div>
+        
+        <!-- New CTA Button in FAQ Section -->
+        <div class="flex justify-center">
+          <button 
+            onclick="document.getElementById('offer-section').scrollIntoView({ behavior: 'smooth' })"
+            class="w-full max-w-md bg-[#05A045] hover:bg-[#048c3c] text-white text-xl font-black py-5 px-8 rounded-2xl shadow-xl transition-all hover:scale-105 active:scale-95 uppercase flex items-center justify-center gap-2"
+          >
+            YES, I WANT MY KIT!
+          </button>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-[#F2F2F2] py-16 px-4 text-slate-600 text-center border-t border-slate-200">
+        <div class="max-w-4xl mx-auto flex flex-col items-center">
+           <img 
+             src="https://i.ibb.co/0RZ6tm2M/logo-abatools-escrita.png" 
+             alt="AbaTools Logo" 
+             class="h-14 md:h-20 w-auto mb-12 opacity-90 object-contain"
+           />
+           
+           <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 mb-12 w-full">
+             <!-- Support Section -->
+             <div class="text-slate-700">
+               <h4 class="font-black text-slate-900 uppercase text-sm tracking-widest mb-6">Official Support</h4>
+               <div class="flex flex-col gap-3 items-center">
+                 <div class="flex items-center gap-2 font-semibold">
+                   <i data-lucide="instagram" class="w-5 h-5 text-[#05A045]"></i>
+                   <span>@aba.tools</span>
+                 </div>
+                 <div class="flex items-center gap-2 font-semibold">
+                   <i data-lucide="mail" class="w-5 h-5 text-[#05A045]"></i>
+                   <span>contact@abatools.pro</span>
+                 </div>
+                 <div class="flex items-center gap-2 font-semibold text-slate-500 text-sm mt-1">
+                   <i data-lucide="clock" class="w-5 h-5 text-[#05A045]"></i>
+                   <span>Mon - Fri: 9 AM - 6 PM</span>
+                 </div>
+               </div>
+             </div>
+
+             <!-- Security Section -->
+             <div class="text-slate-700">
+               <h4 class="font-black text-slate-900 uppercase text-sm tracking-widest mb-6">Security</h4>
+               <div class="flex flex-col items-center gap-4">
+                 <div class="flex items-center gap-2 font-semibold text-[#05A045] mb-2">
+                   <i data-lucide="shield" class="w-5 h-5"></i>
+                   <span>100% Secure Environment</span>
+                 </div>
+                 <img 
+                   src="https://i.ibb.co/tpx5MSGZ/selos.png" 
+                   alt="Security Seals" 
+                   class="h-36 md:h-52 w-auto object-contain opacity-90"
+                 />
+               </div>
+             </div>
+           </div>
+
+           <div class="opacity-60 text-[10px] md:text-xs pt-8 border-t border-slate-300 w-full max-w-xs">
+              <p class="font-bold">AbaTools 2026 © All rights reserved.</p>
+           </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // Initialize Lucide Icons
+      document.addEventListener('DOMContentLoaded', () => {
+        
+        // Date Logic
+        const date = new Date();
+        const options = { weekday: 'long' };
+        const dayName = date.toLocaleDateString('en-US', options);
+        const capitalizedDay = dayName.charAt(0).toUpperCase() + dayName.slice(1);
+        const dateString = date.toLocaleDateString('en-US');
+
+        const dayEls = document.querySelectorAll('.dynamic-day');
+        dayEls.forEach(el => el.textContent = capitalizedDay);
+        
+        const dateEls = document.querySelectorAll('.dynamic-date');
+        dateEls.forEach(el => el.textContent = dateString);
+        
+        lucide.createIcons();
+      });
+
+      // Accordion Logic
+      function toggleAccordion(button) {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('.accordion-icon');
+        
+        if (content.classList.contains('open')) {
+          content.classList.remove('open');
+          content.style.maxHeight = null;
+          icon.setAttribute('data-lucide', 'chevron-down');
+        } else {
+          content.classList.add('open');
+          content.style.maxHeight = content.scrollHeight + "px";
+          icon.setAttribute('data-lucide', 'chevron-up');
+        }
+        lucide.createIcons();
+      }
+    </script>
+  </body>
+</html>
